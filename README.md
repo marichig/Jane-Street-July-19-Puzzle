@@ -13,6 +13,7 @@ The SearchTester class checks each word to see if it was even placeable on the b
 Change "CUTOFF_VALUE_LOW" in class ScrabbleWordList to exclude all words with scores below that.
 
 Sample Output (the spaces in the grid are empty cells):
+```
 Search Result: Row: 5 Column: 5 Value: D. for start (2, 1)
 ENJAMBEMENT 24
 TZITZIT 25
@@ -25,8 +26,9 @@ JETIYO
 AMOHEC
  EBALI
 U I OD
-
+```
 Some other comments:
+
 Some parts of the code are pretty hard-coded, like the CUT_OFF_VALUE mentioned above, the greedy setting, etc. Sorry!
 
 The Grid class has a JTable reference that displays the board in real time. This was quite useful in debugging and seeing final board configs, but updating it slows down the search considerably (although it's pretty cool to watch the depth first search happen in real time). Hence, all JTable/TableModel references are commented out in Grid.
